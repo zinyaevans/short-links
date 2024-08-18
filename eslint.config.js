@@ -28,6 +28,7 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+      "no-console": "warn",
       "prettier/prettier": [
         "error",
         {
