@@ -1,13 +1,15 @@
 import "./App.css";
 import "./index.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { RootPage } from "../pages/root-page";
+import { Profile } from "../pages/profile";
 
 export const App = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<h1>Route page</h1>} />
-        <Route path="/profile" element={<h1>Profile</h1>} />
+        <Route path="/" element={<RootPage />} />
+        <Route path="/profile" element={<Profile />} />
       </Routes>
     </BrowserRouter>
   );
